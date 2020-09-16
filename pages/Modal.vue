@@ -1,8 +1,7 @@
 <template>
   <div>
        <v-content>
-         <Breadcrumb/>
-      <Carouselhome/>
+       <Modal/>
     
       </v-content>
   </div>
