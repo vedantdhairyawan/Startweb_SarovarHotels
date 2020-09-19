@@ -1,8 +1,7 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
+         <Autosize/>
     
       </v-content>
   </div>

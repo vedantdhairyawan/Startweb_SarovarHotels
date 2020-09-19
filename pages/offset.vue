@@ -1,8 +1,7 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
+         <Offset/>
     
       </v-content>
   </div>

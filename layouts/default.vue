@@ -3,11 +3,11 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="#000080" dark fixed app> <!--
+    <v-app-bar color="#FFFF" dark fixed app> 
        <v-toolbar-title>Sarovar Hotels</v-toolbar-title>-->
        <!-- Component Example -->
        <SarovarLogo/>
-        <Nav/>
+        <Navicon/>
     </v-app-bar>
 
     <!-- Body -->
@@ -15,10 +15,10 @@
       <nuxt /> 
     </v-content>
     
-    <!-- Footer -->
-    <v-footer color="#000080" app>
+    <Footer/>
+    <!-- <v-footer color="#000080" app>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    </v-footer> -->
 
   </v-app>
 </template>

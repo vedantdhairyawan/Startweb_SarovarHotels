@@ -1,8 +1,7 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
+         <Onecol/>
     
       </v-content>
   </div>

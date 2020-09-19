@@ -21,9 +21,9 @@
           href: 'breadcrumbs_Home',
         },
         {
-          text: 'Holidays',
+          text: 'Hotels',
           disabled: false,
-          href: 'breadcrumbs_Holidays',
+          href: 'breadcrumbs_Hotels',
         },
         {
           text: 'Sarovar Portico, Agra',

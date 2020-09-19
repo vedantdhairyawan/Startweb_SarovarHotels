@@ -1,10 +1,10 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
-    
-      </v-content>
+         <Breadcrumb/>
+         <Verticalalign/>
+      
+        </v-content>
   </div>
 </template>
 

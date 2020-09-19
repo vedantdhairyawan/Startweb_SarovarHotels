@@ -8,6 +8,7 @@
       dark
     >
       <v-spacer></v-spacer>
+      <!-- vertical spacing -->
 
       <v-icon>mdi-window-minimize</v-icon>
 
@@ -25,6 +26,7 @@
       <v-toolbar-title>Discover</v-toolbar-title>
 
       <v-spacer></v-spacer>
+      <!-- vertical spacing -->
 
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
@@ -32,12 +34,16 @@
     </v-toolbar>
 
     <v-container fluid>
+      <!-- responsive container -->
       <v-row dense>
         <v-col
           v-for="card in cards"
           :key="card.title"
           :cols="card.flex"
         >
+        <!-- for loop for every card added to have the same set of properties -->
+        <!-- flex for columns and rows -->
+        <!-- key  -->
           <v-card>
             <v-img
               :src="card.src"
@@ -45,6 +51,7 @@
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="200px"
             >
+            <!-- v-img for resizing -->
               <v-card-title v-text="card.title"></v-card-title>
             </v-img> 
             <!-- resize or fit image -->
@@ -59,6 +66,7 @@
               <v-btn icon>
                 <v-icon>mdi-bookmark</v-icon>
               </v-btn>
+              <!-- mdi icon size -->
 
               <v-btn icon>
                 <v-icon>mdi-share-variant</v-icon>
@@ -80,6 +88,7 @@
         { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
         { title: 'Worst airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
       ],
+      // for loop acts here
     }),
   }
 </script>

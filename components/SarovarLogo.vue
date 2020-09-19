@@ -2,14 +2,14 @@
   <img
     class="SarovarLogo"
     alt="Sarovar Logo"
-    src="SarovarLogo.png"
+    src="SarovarLogoBlue.jpg"
   >
 </template>
 
 <style>
 .SarovarLogo {
-  height: 37px;
-  width: 80px;
+  height: 38px;
+  width: 148px;
+   margin: 0 auto;
   }
 </style>
-<!-- margin: 0 auto;-->

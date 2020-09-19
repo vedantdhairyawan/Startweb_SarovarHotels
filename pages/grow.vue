@@ -1,9 +1,8 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
-    
+         <Growshrink/>
+     
       </v-content>
   </div>
 </template>

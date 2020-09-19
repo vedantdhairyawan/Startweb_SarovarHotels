@@ -1,8 +1,7 @@
 <template>
   <div>
        <v-content>
-       <Gridusage/>
-       <Playground/>
+         <Scrollspyfunction2/>
     
       </v-content>
   </div>
