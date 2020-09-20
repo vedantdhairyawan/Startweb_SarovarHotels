@@ -4,10 +4,12 @@
     
     <!--Header -->
     <v-app-bar color="#FFFF" dark fixed app> 
-       <v-toolbar-title>Sarovar Hotels</v-toolbar-title>-->
-       <!-- Component Example -->
-       <SarovarLogo/>
-        <Navicon/>
+      
+      <!-- Component Example -->
+      <!-- <Naviconinfo/> -->
+      <Naviconsearch/>
+      <SarovarLogo/>
+      <Naviconprofile/>
     </v-app-bar>
 
     <!-- Body -->
