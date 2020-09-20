@@ -1,5 +1,6 @@
 <template>
-  <v-carousel>
+  <v-carousel height="700px">
+    <!-- carousel height -->
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -8,6 +9,7 @@
       transition="fade-transition"
     ></v-carousel-item>
   </v-carousel>
+  <!-- transition between carousel images fade while surfing back and forth-->
 </template>
 
 <script>

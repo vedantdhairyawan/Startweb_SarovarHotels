@@ -10,6 +10,6 @@
 .SarovarLogo {
   height: 38px;
   width: 148px;
-   margin: 0 auto;
+  margin: 0 auto;
   }
 </style>

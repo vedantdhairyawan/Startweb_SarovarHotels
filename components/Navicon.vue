@@ -1,7 +1,6 @@
 <template>
-   
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-   
+     <v-avatar color="indigo">
+      <v-icon dark>mdi-account-circle</v-icon>
+      <!-- profile icon -->
+    </v-avatar>
 </template>

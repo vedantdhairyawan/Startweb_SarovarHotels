@@ -1,14 +1,13 @@
 <template>
-  <v-breadcrumbs :items="items">
-    <template v-slot:item="{ item }">
-      <v-breadcrumbs-item
-        :href="item.href"
-        :disabled="item.disabled"
-      >
-        {{ item.text.toUpperCase() }}
-      </v-breadcrumbs-item>
-    </template>
-  </v-breadcrumbs>
+  <div>
+    <v-breadcrumbs :items="items">
+      <template v-slot:divider>
+        <!-- for introducing icons as dividers -->
+        <v-icon color="grey darken-2">mdi-chevron-right</v-icon>
+        <!-- breadcrumb arrow icons -->
+      </template>
+    </v-breadcrumbs>
+  </div>
 </template>
 
 <script>
@@ -17,20 +16,24 @@
       items: [
         {
           text: 'Home',
+          // visible breadcrumb text
           disabled: false,
-          href: 'breadcrumbs_Home',
+          // boolean variable for being clickable
+          href: 'Home',
+          // href link
         },
         {
           text: 'Hotels',
           disabled: false,
-          href: 'breadcrumbs_Hotels',
+          href: 'Hotels', 
         },
         {
-          text: 'Sarovar Portico, Agra',
+          text: 'Crystal Sarovar Premiere,Agra',
           disabled: false,
-          href: 'breadcrumbs_Sarovar_Portico,_Agra',
+          href: 'Crystal_Sarovar_Premiere_Agra',
         },
       ],
     }),
   }
 </script>
+

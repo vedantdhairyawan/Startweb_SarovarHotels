@@ -1,73 +1,32 @@
 <template>
-  <v-container class="grey lighten-5">
-    <v-row
-      class="mb-6"
-      no-gutters
+  <div>
+  
+    <v-container
+      id="scroll-target"
+      style="max-height: 400px"
+      class="overflow-y-auto"
     >
-      <v-col md="2">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          Hi
-        </v-card>
-      </v-col>
-      <v-col
-        md="3"
-        offset-md="3"
+      <v-row
+        v-scroll:#scroll-target="onScroll"
+        align="center"
+        justify="center"
+        style="height: 1000px"
       >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          There
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-6"
-      no-gutters
-    >
-      <v-col
-        md="1"
-        offset-md="4"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          This
-        </v-card>
-      </v-col>
-      <v-col
-        md="4"
-        offset-md="3"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          Is
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row no-gutters>
-      <v-col
-        md="3"
-        offset-md="2"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          Sparta
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+      </v-row>
+    </v-container>
+  </div>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      offsetTop: 12,
+    }),
+
+    methods: {
+      onScroll (e) {
+        this.offsetTop = e.target.scrollTop
+      },
+    },
+  }
+</script>
