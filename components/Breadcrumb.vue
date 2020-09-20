@@ -23,14 +23,22 @@
           // href link
         },
         {
+          text: 'Holidays',
+          // visible breadcrumb text
+          disabled: false,
+          // boolean variable for being clickable
+          href: 'Holidays',
+          // href link
+        },
+        {
           text: 'Hotels',
           disabled: false,
           href: 'Hotels', 
         },
         {
-          text: 'Crystal Sarovar Premiere,Agra',
+          text: 'Get details',
           disabled: false,
-          href: 'Crystal_Sarovar_Premiere_Agra',
+          href: 'Get details',
         },
       ],
     }),

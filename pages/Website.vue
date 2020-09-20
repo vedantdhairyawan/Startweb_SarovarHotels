@@ -33,18 +33,15 @@
               <h1> Explore Agra </h1>
             </v-row>  
             <!-- Explore Agra justified in the center, h1 for larger size of heading -->
-                <h2>The Magnificent Taj Mahal</h2>   
+                <h2>Experience The Regal Charm of Agra</h2>   
                     <!-- h2 for a smaller size of heading in comparison with h1  -->
                   <p> 
-                    As part of India's golden triangle, the city of Agra is one of the travel hotspots of the world. 
-                    Agra, home to the Taj Mahal, one of the seven wonders of the world, is rich in its history and architecture. 
-                    Taj Mahal, an epitome of love, is regarded as an astounding architectural beauty and has continuously 
-                    been on the 'Seven Wonders of the World' list. Taj Mahal was constructed for a period of 22 years, and 
-                    a total of about twenty thousand workers were employed to build it. This architectural marvel is built entirely of 
-                    white marble and it glows in the moonlight. Shah Jahan built this monument in the memory of his wife Mumtaz, 
-                    whose grave is housed within the premises of the Taj Mahal. There are several other aspects that create the 
-                    spectacle that the Taj Mahal is — beautiful Charbaghs(Taj Garden), the magnificent Darwaza,the symmetrical 
-                    sandstone structures surrounding the Taj, and the placid Yamuna river that flows behind it.
+                  We await to welcome you to the colourful vibes and regal charm of Agra. Experience the institutional hospitality of 
+                  Crystal Sarovar Premiere — the perfect blend of luxury and convenience.As part of India's golden triangle, the city of Agra 
+                  is one of the travel hotspots of the world. Agra, home to the Taj Mahal, one of the seven wonders of the world, is rich in its
+                  history and architecture — chronicled landmarks, fantastic architecture marvels, altars, tombs devoted to love and celebration, 
+                  forts, and palaces from the fabric of this city. But Agra has a lot more to offer. It is home to local artisians whose ancestors 
+                  were makers of the Taj Mahal, there are bustling food streets and colorful flea markets like the Kinari bazar, birdwatching spots, and beautiful riversides.
                   </p>
                   <!-- paragraph tag -->
           </v-col>
@@ -55,9 +52,23 @@
             <v-col cols="12" sm="6" md="12">
               <v-row justify="center">
                   <h1>Location</h1>
-              </v-row>
+                  <Growshrink/>
+                  </v-row>
+                  <v-row justify="left">
+                  <h2> The Majestic Taj Mahal </h2>
+                  <p>As part of India's golden triangle, the city of Agra is one of the travel hotspots of the world. 
+                    Agra, home to the Taj Mahal, one of the seven wonders of the world, is rich in its history and 
+                    architecture. Taj Mahal, an epitome of love, is regarded as an astounding architectural beauty and 
+                    has continuously been on the 'Seven Wonders of the World' list. Taj Mahal was constructed for a
+                    period of 22 years, and a total of about twenty thousand workers were employed to build it. This 
+                    architectural marvel is built entirely of white marble and it glows in the moonlight. Shah Jahan 
+                    built this monument in the memory of his wife Mumtaz, whose grave is housed within the premises of 
+                    the Taj Mahal. There are several other aspects that create the spectacle that the Taj Mahal is — beautiful 
+                    Charbaghs(Taj Garden), the magnificent Darwaza,the symmetrical sandstone structures surrounding the Taj, 
+                    and the placid Yamuna river that flows behind it.
+                  </p>
+                </v-row>
             </v-col>
-              <Growshrink/>
           </section>
 
           <section id="Dining">
@@ -74,16 +85,16 @@
             </v-col>
     
 
-              <v-row justify="left">
+              <v-row justify="center">
                 <v-col cols="12" sm="6" md="5">
                   <v-img src="Cuisine meat 2.jpg" ></v-img>
                 </v-col>
                 <!-- v-img to insert images sourced from static folder -->
-                <!-- justify left for images -->
+                <!-- justify center for images -->
 
-                  <v-col cols="12" sm="6" md="7">
-                    <h3>Assorted Barbecue Cuisine</h3>
-                    <!-- h3 header size lower than h2 and h1 -->
+                  <v-col cols="12" sm="6" md="5">
+                    <h2>Assorted Barbecue Cuisine</h2>
+                    <!-- h2 header size lower than h1 -->
                       <p> Passion is the most important ingredient, and we bring you the 
                           beauty of barbecue flavours in every bite. Owing to our expert chefs, 
                           a nightly-changing tasting menu is sure to take your taste-buds on an 
@@ -92,13 +103,13 @@
                   </v-col>
               </v-row>
 
-              <v-row justify="left">
+              <v-row justify="center">
                 <v-col cols="12" sm="6" md="5">
                   <v-img src="Cuisine French.jpg" ></v-img>
                 </v-col>
 
-                <v-col cols="12" sm="6" md="7">
-                <h3>French Cuisine</h3>
+                <v-col cols="12" sm="6" md="5">
+                <h2>French Cuisine</h2>
                   <p> Passion is the most important ingredient, and we bring you 
                       the beauty of Italian flavours in every bite. Owing to our expert chefs, 
                       a nightly-changing tasting menu is sure to take your taste-buds on an 
@@ -107,13 +118,13 @@
                 </v-col>
               </v-row>
 
-              <v-row justify="left">
+              <v-row justify="center">
                 <v-col cols="12" sm="6" md="5">
                   <v-img src="Cuisine Italian.jpg" ></v-img>
                 </v-col>
 
-                <v-col cols="12" sm="6" md="7">
-                  <h3>Italian Cuisine</h3>
+                <v-col cols="12" sm="6" md="5">
+                  <h2>Italian Cuisine</h2>
                   <p>Passion is the most important ingredient, and we bring you 
                     the beauty of Mexican flavours in every bite. Owing to our expert chefs, 
                     a nightly-changing tasting menu is sure to take your taste-buds on an 
