@@ -53,6 +53,7 @@
               <v-row justify="center">
                   <h1>Location</h1>
                   <Growshrink/>
+                  <!-- for inserting location related images -->
                   </v-row>
                   <v-row justify="left">
                   <h2> The Majestic Taj Mahal </h2>

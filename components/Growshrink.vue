@@ -36,6 +36,7 @@
               height="180px"
               src="A.jpg"
             > </v-img>
+            <!-- v-img to insert images -->
           
         
         </v-col>
