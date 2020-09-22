@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="typeface">
     <v-col cols="12">
       <v-sheet
           elevation="6"
@@ -30,7 +30,7 @@
          
           <v-col cols="12" sm="6" md="12">
             <v-row justify="center">
-              <h1> Explore Agra </h1>
+              <h1 class ="brandcol"> Explore Agra </h1>
             </v-row>  
             <!-- Explore Agra justified in the center, h1 for larger size of heading -->
                 <h2>Experience The Regal Charm of Agra</h2>   
@@ -51,7 +51,7 @@
               <!-- section id Location binds the section of the page to the Location link in the scrollspy-->
             <v-col cols="12" sm="6" md="12">
               <v-row justify="center">
-                  <h1>Location</h1>
+                  <h1 class ="brandcol">Location</h1>
                   <Growshrink/>
                   <!-- for inserting location related images -->
                   </v-row>
@@ -76,7 +76,7 @@
               <!-- section id Dining binds the section of the page to the Dining link in the scrollspy-->
             <v-col cols="12" sm="6" md="12">
               <v-row justify="center">
-                <h1> Dining </h1>
+                <h1 class ="brandcol"> Dining </h1>
                   <p align="center"> 
                     We love to eat, to take our time and enjoy the flavours in a series of small dishes. Our degustation gives you the chance to do exactly that. 
                     More than a succession of plates, we offer you an experience, a connection between each dish, pulling from a wide range of authenticities.
@@ -137,7 +137,7 @@
           <section id="Gallery">
               <!-- section id Gallery binds the section of the page to the Gallery link in the scrollspy-->
             <v-row justify="center">
-              <h2>Gallery</h2>
+              <h1 class ="brandcol">Gallery</h1>
                 <p>The easy-living ambiance and lavish settings, coupled with our signature services ensure 
                     that stays at our hotel are excellent experiences, both for leisure and business travelers. 
                     We offer our guests five different accommodation options, that include immaculate rooms 
@@ -169,6 +169,11 @@
   width: 10%;
   /* width of v-sheet */
   height: 120px;
-  /* height of v-sheet */
-  }
+  /* height of v-sheet */}
+  
+.brandcol {color:rgb(10, 64, 130);} 
+
+.typeface {
+  font-family:"Poppins";} 
+
 </style>

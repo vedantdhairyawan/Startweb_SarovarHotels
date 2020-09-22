@@ -3,7 +3,7 @@
        <v-content>
          <Breadcrumb/>
       <Carouselhome/>
-    
+   
       </v-content>
   </div>
 </template>

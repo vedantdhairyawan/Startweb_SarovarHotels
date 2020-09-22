@@ -6,7 +6,7 @@
     <v-app-bar color="#FFFF" dark fixed app> 
       
       <!-- Component Example -->
-      <!-- <Naviconinfo/> -->
+      <Naviconinfo/>
       <Naviconsearch/>
       <SarovarLogo/>
       <Naviconprofile/>
@@ -36,6 +36,6 @@ export default {}
 
    #inspire {
     background-color: white;
-    color: black ;
+    color: #707070 ;
   }
 </style>
