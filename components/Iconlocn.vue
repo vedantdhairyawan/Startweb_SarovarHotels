@@ -1,5 +1,5 @@
 <template>
-  <html>
+  <html class="noscrollbar">
     <head>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- linking to materialize library of icons -->
@@ -34,3 +34,9 @@
       </v-tabs>
  </html>
 </template>
+
+<style>
+.noscrollbar{
+overflow-y: hidden;}
+/* hiding vertical scrollbar */
+</style>
