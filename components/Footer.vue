@@ -1,12 +1,27 @@
 <template>
   <v-footer
-    dark
+    light
     padless
+    color="#0A4082"
   >
-    <v-card
+  <v-row>
+    <v-card cols="12" sm="12" md="12"
       flat
       tile
-      class="indigo lighten-4 blue-- text text-center"
+      
+      color="#0A4082"
+      height="10px"
+    >
+    <!-- doubt -->
+    </v-card>
+    </v-row>
+
+    <v-row>
+    <v-card cols="12" sm="12" md="12"
+      flat
+      tile
+      class="blue-- text text-center"
+      color="#E4F2FC"
     >
       <v-card-text>
         <v-btn
@@ -25,6 +40,7 @@
 
       <v-divider></v-divider>
     </v-card>
+    </v-row>
   </v-footer>
 </template>
 
@@ -40,3 +56,7 @@
     }),
   }
 </script>
+
+<style>
+.footcol{color:#E4F2FC ;}
+</style>
