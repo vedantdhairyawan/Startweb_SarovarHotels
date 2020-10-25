@@ -1,10 +1,5 @@
 <template>
   <html>
-    <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-      <!-- link for location,gallery and satellite icons -->
-  
     <div class="typeface">
     <!--class for poppins typeface  -->
       <v-row>
@@ -26,10 +21,9 @@
           </nav>
         </v-col>
       </v-row>
-        
-
-      <v-container>
-        <!-- container enables centering the site's componenents in a grid -->
+      
+      <v-container class="mt-n16">
+      <!-- container enables centering the site's componenents in a grid -->
         <v-content>
           <section id="ExploreAgra" >
           <!-- section id helps recognize section to bind to href links -->
@@ -39,9 +33,8 @@
                 <!-- brandcol class for applying brand color to headings -->
               </v-row>  
               <!-- Explore Agra justified in the center, h1 for larger size of heading -->
-                  <h2 class="subheadingsize">Experience The Regal Charm of Agra, Uttar Pradesh</h2>   
+                  <h2 class="font-size: 16pt; mt-4">Experience The Regal Charm of Agra, Uttar Pradesh</h2>   
                   <!-- h2 for a smaller size of heading in comparison with h1  -->
-                  <!-- subheadingsize class for reducing font size in responsive-xs screens -->
                     <p> 
                       We await to welcome you to the colourful vibes and regal charm of Agra. Experience the institutional hospitality of 
                       Crystal Sarovar Premiere — the perfect blend of luxury and convenience.As part of India's golden triangle, the city of Agra 
@@ -59,21 +52,13 @@
             <v-col cols="12" sm="12" md="12">
               <v-row justify="center">
                 <h1 class ="brandcol">LOCATION</h1>
-                  <Growshrink/>
-                  <Carousellocationxs/>
-                  <!-- for inserting location related images -->
+                  <Locationtabs/>
+                  <!-- Tabs in location section -->
               </v-row>
-                    
-              <v-row>
-                <v-col cols="12" sm="6" md="4">
-                  <Iconlocn/>
-                  <!-- for location, gallery and satellite icons  -->
-                </v-col>
-              </v-row>
-                    
+          
               <v-row justify="left">
-                <h2 class="subheadingsize"> The Majestic Taj Mahal </h2>
-                <p>
+                <h2 class="font-size: 16pt; mt-8"> The Magnificent Taj Mahal </h2>
+                <p class="font-size: 16pt; mt-4">
                   As part of India's golden triangle, the city of Agra is one of the travel hotspots of the world. 
                   Agra, home to the Taj Mahal, one of the seven wonders of the world, is rich in its history and 
                   archiecture. Taj Mahal, an epitome of love, is regarded as an astounding architectural beauty and 
@@ -94,7 +79,7 @@
             <v-col cols="12" sm="12" md="12">
               <v-row justify="center">
                 <h1 class ="brandcol"> DINING </h1>
-                  <p align="center"> 
+                  <p class="align-center; mt-4"> 
                     We love to eat, to take our time and enjoy the flavours in a series of small dishes. Our degustation gives you the chance to do exactly that. 
                     More than a succession of plates, we offer you an experience, a connection between each dish, pulling from a wide range of authenticities.
                   </p>
@@ -106,15 +91,17 @@
               <v-row justify="center">
               <!-- justify center for images -->
                 <v-col cols="12" sm="6" md="5">
-                  <v-img src="Cuisine meat 2.jpg" ></v-img>
+                  <v-img 
+                  src="Cuisine meat 2.jpg" >
+                  </v-img>
                   <!-- v-img to insert images sourced from static folder -->
                 </v-col>
                   
               
                 <v-col cols="12" sm="6" md="5">
-                  <h2 class="subheadingsize">Assorted Barbecue Cuisine</h2>
+                  <h2 class="font-size: 16pt; mt-4">ASSORTED BARBECUE CUISINE</h2>
                   <!-- h2 header size lower than h1 -->
-                    <p>
+                    <p class="mt-8">
                       Passion is the most important ingredient, and we bring you the 
                       beauty of barbecue flavours in every bite. Owing to our expert chefs, 
                       a nightly-changing tasting menu is sure to take your taste-buds on an 
@@ -125,12 +112,14 @@
 
               <v-row justify="center">
                 <v-col cols="12" sm="6" md="5">
-                  <v-img src="Cuisine French.jpg" ></v-img>
+                  <v-img 
+                  src="Cuisine French.jpg" >
+                  </v-img>
                 </v-col>
 
                 <v-col cols="12" sm="6" md="5">
-                <h2 class="subheadingsize">French Cuisine</h2>
-                  <p>
+                <h2 class="font-size: 16pt; mt-4">ITALIAN CUISINE</h2>
+                  <p class="mt-8">
                     Passion is the most important ingredient, and we bring you 
                     the beauty of Italian flavours in every bite. Owing to our expert chefs, 
                     a nightly-changing tasting menu is sure to take your taste-buds on an 
@@ -141,12 +130,14 @@
 
               <v-row justify="center">
                 <v-col cols="12" sm="6" md="5">
-                  <v-img src="Cuisine Italian.jpg" ></v-img>
+                  <v-img 
+                  src="Cuisine Italian.jpg" >
+                  </v-img>
                 </v-col>
 
                 <v-col cols="12" sm="6" md="5">
-                  <h2 class="subheadingsize">Italian Cuisine</h2>
-                  <p>Passion is the most important ingredient, and we bring you 
+                  <h2 class="font-size: 16pt; mt-4">MEXICAN CUISINE</h2>
+                  <p class="mt-8">Passion is the most important ingredient, and we bring you 
                     the beauty of Mexican flavours in every bite. Owing to our expert chefs, 
                     a nightly-changing tasting menu is sure to take your taste-buds on an 
                     adventurous ride into the beauty of Mexican food.</p>
@@ -170,10 +161,18 @@
         </v-content>
       </v-container>
         
+      <v-row>
         <v-col cols=12 sm="12" md="12">
           <Carouselgallery/>
           <!-- Gallery carousel -->
         </v-col>
+      </v-row>
+
+        <p align="right" class="mr-16">
+        <font size=2 color="#2699FB">
+        <u>BOOK ROOMS</u>
+        </font>
+        </p>
     
     </div>
   </html>
@@ -183,35 +182,33 @@
 </script>
 
 <style>
-.verticalnav {
-  position: fixed;
-  /* persistent throughout scrolling */
-  top: 230px;
-  /* position of v-sheet from top */
-  z-index: 2;
-  /* stacked on top of other elements */
-  width: 10%;
-  /* width of v-sheet */
-  height: 120px;
-  /* height of v-sheet */}
- 
- .typeface {
-  font-family:"Poppins";} 
-@media (max-width: 600px){
-.subheadingsize{font-size: 16pt;}
-}
-/* subheading font size reduces for x */
 
-.brandcol {color:rgb(10, 64, 130);
-font-size: 28pt ;} 
+  .verticalnav {
+    position: fixed;
+    /* persistent throughout scrolling */
+    top: 230px;
+    /* position of v-sheet from top */
+    z-index: 2;
+    /* stacked on top of other elements */
+  }
+  
+  .typeface {
+    font-family:"Poppins";} 
+    
+  @media (max-width: 600px){
+  .subheadingsize{font-size: 16pt;}
+  }
+  /* subheading font size reduces for x */
 
-@media (max-width: 600px){
-.brandcol {
-  font-size: 22pt;
-}
-}
-/* heading font size reduces in xs */
+  .brandcol {color:rgb(10, 64, 130);
+  font-size: 28pt ;} 
 
-
+  @media (max-width: 600px){
+  .brandcol {
+    font-size: 22pt;
+  }
+  }
+  /* heading font size reduces in xs */
 
 </style>
+

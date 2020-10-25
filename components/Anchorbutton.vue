@@ -17,10 +17,11 @@
         <v-btn class="text-center rounded-pill d-inline-flex"
           height="85"
           width="85"
-          color="#0A4082"   href="holidays#Location">Location
+          color="#0A4082"   
+          href="holidays#Location">Location
         </v-btn>
       </div>
-      
+    
       <div class="mx-10 my-2">
         <v-btn class="text-center rounded-pill d-inline-flex"
           height="85"
@@ -29,17 +30,18 @@
           href="holidays#Dining">Dining
         </v-btn>
       </div>
-        
+      
       <div class="mx-10 my-2">
         <v-btn class="text-center rounded-pill d-inline-flex"
           height="85"
           width="85"
-          color="#0A4082"  href="holidays#Gallery" >Gallery</v-btn>
+          color="#0A4082"  href="holidays#Gallery" >Gallery
+        </v-btn>
       </div>
-      
     </v-col>
   </v-row>
 </template>
+
 
 <style>
 @media (max-width: 1160px) {
