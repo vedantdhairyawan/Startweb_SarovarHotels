@@ -1,5 +1,5 @@
 <template>
-    <v-container id="dropdown-example">
+    <v-container >
       <v-row>
 
 
@@ -11,11 +11,13 @@
           <font color="#BDBDBD">
             <h2>1. Catering</h2>
           </font>
-          <v-overflow-btn
-            class="my-2 blue"
+          <v-overflow-btn light
+            background-color="#E3F2FD"
+            color="#0a4082"
             :items="dropdown_edit"
             label="Options"
             item-value="text"
+            outlined
           ></v-overflow-btn>
         </v-col>
       </v-row>
@@ -29,11 +31,13 @@
             <h2>2. Stewards</h2>
           </font>
 
-          <v-overflow-btn
-            class="my-2 blue"
+          <v-overflow-btn light
+            background-color="#E3F2FD"
+            color="#0a4082"
             :items="steward_number"
             label="Options"
             item-value="text"
+            outlined
           ></v-overflow-btn>
         </v-col>
       </v-row>
@@ -47,8 +51,10 @@
             <h2>3. Sound Equipment</h2>
           </font>
 
-          <v-overflow-btn
-            class="my-2 blue"
+          <v-overflow-btn light
+            background-color="#E3F2FD"
+            color="#0a4082"
+            outlined
             multiple
             :items="sound"
             label="Options"
@@ -85,3 +91,4 @@
 
 
 </script>
+
