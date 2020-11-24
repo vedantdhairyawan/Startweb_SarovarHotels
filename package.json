@@ -12,7 +12,11 @@
   "dependencies": {
     "node-gyp": "^7.1.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "nuxt": "^2.14.5",
+=======
+    "nuxt": "^2.14.7",
+>>>>>>> 4f4d11cbb5b9e6aa0a8fde8bfc01487dc1d05e6c
 =======
     "nuxt": "^2.14.7",
 >>>>>>> 4f4d11cbb5b9e6aa0a8fde8bfc01487dc1d05e6c
