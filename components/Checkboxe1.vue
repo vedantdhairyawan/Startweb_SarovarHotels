@@ -12,7 +12,11 @@
               <h3>Number of Tables</h3>
             </font>
           <v-overflow-btn
-            class="my-2 blue"
+            light
+            background-color="#E3F2FD"
+            color="#0a4082"
+            outlined
+            class="my-2"
             editable
             :items="dropdown_edit"
             label="Options"
@@ -30,7 +34,11 @@
             </font>
 
           <v-overflow-btn
-            class="my-2 blue"
+            class="my-2"
+            light
+            background-color="#E3F2FD"
+            outlined
+            color="#0a4082"
             editable
             :items="steward_number"
             label="Options"
@@ -48,7 +56,11 @@
             </font>
 
           <v-overflow-btn
-            class="my-2 blue"
+            class="my-2"
+            light
+            color="#0a4082"
+            background-color="#E3F2FD"
+            outlined
             editable
             :items="sound"
             label="Options"
