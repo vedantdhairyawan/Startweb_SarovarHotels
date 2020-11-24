@@ -91,8 +91,8 @@
             @blur="$v.checkbox.$touch()"
           ></v-checkbox>
 
-        <v-btn class="ml-8" @click="submit">submit</v-btn>
-        <v-btn class="ml-4" @click="clear">clear</v-btn>
+        <v-btn color="#0a4082" class="ml-8" @click="submit">submit</v-btn>
+        <v-btn color="#0a4082" class="ml-4" @click="clear">clear</v-btn>
 
     </form>
 

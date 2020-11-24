@@ -2,13 +2,17 @@
 <!-- stepper form was used to make my web-page as it was the perfect component to use for my idea -->
   <v-container class="white" md="12" sm="8" xs="12">
 
-    <h1>Hall Booking</h1>
+    <font color="#0a4082">
+      <h1>Hall Booking</h1>
+    </font>
 
     <v-col cols="12">
 
       <v-stepper class="white" v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
-          <h2 class="blue--text">Type of Event</h2>
+          <font color="#0a4082">
+            <h2>Type of Event</h2>
+          </font>
           <small></small>
         </v-stepper-step>
 
@@ -20,14 +24,16 @@
             <Radiobuttons/>
 
           </v-card>
-          <v-btn color="primary" @click="e6 = 2">Confirm & Continue</v-btn>
+          <v-btn color="#0a4082" @click="e6 = 2">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
         <!-- this section adds elements below v-card -->
 
         <v-stepper-step :complete="e6 > 2" step="2">
-          <h2 class="blue--text">Specifications</h2>
+          <font color="#0a4082">
+            <h2>Specifications</h2>
+          </font>
           </v-stepper-step>
 
         <v-stepper-content step="2">
@@ -39,12 +45,14 @@
             <Checkboxe1/>
 
           </v-card>
-          <v-btn color="primary" @click="e6 = 3">Confirm & Continue</v-btn>
+          <v-btn color="#0a4082" @click="e6 = 3">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
         <v-stepper-step :complete="e6 > 3" step="3">
-          <h2 class="blue--text">Hall Suggestions</h2>
+          <font color="#0a4082">
+            <h2>Hall Suggestions</h2>
+          </font>
           </v-stepper-step>
 
           <!-- the feature "outlined" worked for step 4 of the stepper form -->
@@ -64,12 +72,14 @@
 
 
           </v-card>
-          <v-btn color="primary" @click="e6 = 4">Confirm & Continue</v-btn>
+          <v-btn color="#0a4082" @click="e6 = 4">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
         <v-stepper-step step="4">
-           <h2 class="blue--text">Optional Extras</h2>
+          <font color="#0a4082">
+            <h2>Optional Extras</h2>
+          </font>
           </v-stepper-step>
           <!-- In the same manner "Outlined" was used again in exactly the same way, but it did not work -->
         <v-stepper-content step="4">
@@ -79,12 +89,14 @@
               <Textbox/>
 
           </v-card>
-          <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
+          <v-btn color="#0a4082" @click="e6 = 5">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
         <v-stepper-step step="5">
-          <h2 class="blue--text">Confirmation</h2>
+          <font color="#0a4082">
+            <h2>Confirmation</h2>
+          </font>
           </v-stepper-step>
         <v-stepper-content step="5">
           <!-- again "outlined" did not work here -->
@@ -96,7 +108,7 @@
 
 
           </v-card>
-          <v-btn color="primary" @click="e6 = 1">Confirm</v-btn>
+          <v-btn color="#0a4082" @click="e6 = 1">Confirm</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
