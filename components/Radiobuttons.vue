@@ -21,12 +21,13 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 
           <v-radio-group>
-            <v-radio label="Birthdays" value="radio-1" ></v-radio>
+            <v-radio label="Birthdays" value="radio-1"></v-radio>
 
           </v-radio-group>
 
@@ -45,7 +46,8 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 
@@ -69,7 +71,8 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 
@@ -97,7 +100,8 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 
@@ -121,7 +125,8 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 
@@ -145,7 +150,8 @@
       >
 
         <v-card
-          class="grey"
+          light
+          color="#E3F2FD"
           max-width="200px"
         >
 

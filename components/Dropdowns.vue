@@ -8,11 +8,14 @@
           </font>
 
         <v-overflow-btn
-          class="my-2 blue"
+          light
+          background-color="#E3F2FD"
+          color="#0a4082"
+          outlined
+          class="my-2"
           :items="dropdown_edit"
           label="Choose"
           editable
-          outlined
           item-value="text"
         ></v-overflow-btn>
       </v-col>

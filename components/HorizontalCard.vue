@@ -1,6 +1,6 @@
 <template>
 <!-- cards work very well in "lg" view but even after a lot of tries, was not able to make them responsive for mobile -->
-  <v-card class="col-12 ml-0" sm="3" color="blue" max-height="300px" md="4">
+  <v-card class="col-12 ml-0" sm="3" color="#E3F2FD" background-color="#E3F2FD" outlined max-height="300px" md="4">
     <v-container fluid class="ml-2">
       <v-row justify="space-between">
         <v-col cols="12"
@@ -20,7 +20,9 @@
         <!-- card for name and address text -->
         <!-- remove elevation -->
        <v-col>
-          <v-card color="blue"
+          <v-card
+            color="#E3F2FD"
+            background-color="#E3F2FD"
             max-width="190px"
             max-height="300"
             elevation="1"
@@ -28,8 +30,10 @@
             cols="12"
           >
             <v-container>
-              <h3>Sarovar Portico</h3><br/>
-              <h4 class="black--text">Carol Bagh, New Delhi</h4>
+              <font color="#0a4082">
+                <h3>Sarovar Portico</h3><br/>
+                <h4 class="black--text">Carol Bagh, New Delhi</h4>
+              </font>
             </v-container>
           </v-card>
        </v-col>
@@ -37,15 +41,18 @@
         <!-- card for availability text -->
 
        <v-col>
-          <v-card color="blue"
+          <v-card
+            color="#E3F2FD"
             max-width="190px"
             max-height="300"
             elevation="1"
             ml="10"
           >
             <v-container>
-              <h3>Availability</h3><br/>
-              <v-card outlined>
+              <font color="#0a4082">
+                <h3>Availability</h3><br/>
+              </font>
+              <v-card light outlined>
                 <v-card-text>Available for 5 hours</v-card-text>
 
               </v-card>
@@ -56,7 +63,8 @@
        <!-- card for specification text -->
 
        <v-col>
-          <v-card color="blue"
+          <v-card
+            color="#E3F2FD"
             max-width="190px"
             max-height="300"
             elevation="1"
@@ -64,8 +72,10 @@
           >
             <v-container>
 
-            <h3>Specifications</h3><br/>
-              <v-card outlined>
+            <font color="#0a4082">
+              <h3>Specifications</h3><br/>
+            </font>
+              <v-card light outlined>
                 <v-icon class="mx-2">mdi-account</v-icon>
                 <v-card-text>40-50</v-card-text>
                 <v-card-text>Air Conditioning available</v-card-text>
