@@ -4,12 +4,12 @@
     <!--offset defines position/distance between image and text-->
       <v-col
         md="6" 
-        offset-md="3"
+        
         <img
           class="low"
           alt="low"
           <v-img
-          src="https://www.damachotelsandresorts.com/getmedia/ff5800a3-ade5-44e8-9ce5-8f7635b410df/DAMAC-_Mobile-Booking_Snippet-1.jpg.aspx?width=552&height=209&ext=.jpg"
+          src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80.jpg"
            class="rounded-xl mb-12">
           </v-img> 
       </v-col>
@@ -21,8 +21,8 @@
 
 <style>
 .low {
-  height: 400px;
-  width: 1200px;
+  height: 200px;
+  width: 1250px;
   margin: 0 auto;
   }
 </style>
