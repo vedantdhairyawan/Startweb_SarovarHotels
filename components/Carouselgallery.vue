@@ -6,12 +6,13 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
+      eager
     >
     <!-- for loop for carousel images -->
     </v-carousel-item>
   </v-carousel>
 </template>
-
+<!-- v-model="valueDeterminate" -->
 <script>
   export default {
     data () {

@@ -93,6 +93,19 @@
                 <v-col cols="12" sm="6" md="5">
                   <v-img 
                   src="Cuisine meat 2.jpg" >
+
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="#0A4082">
+                      </v-progress-circular>
+                    </v-layout>
+                  </template>
+                  <!-- Adding loaders -->
                   </v-img>
                   <!-- v-img to insert images sourced from static folder -->
                 </v-col>
@@ -114,6 +127,19 @@
                 <v-col cols="12" sm="6" md="5">
                   <v-img 
                   src="Cuisine French.jpg" >
+
+                    <template v-slot:placeholder>
+                      <v-layout
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                      >
+                        <v-progress-circular indeterminate color="#0A4082">
+                        </v-progress-circular>
+                      </v-layout>
+                    </template>
+                    <!-- Adding loaders -->
                   </v-img>
                 </v-col>
 
@@ -132,6 +158,19 @@
                 <v-col cols="12" sm="6" md="5">
                   <v-img 
                   src="Cuisine Italian.jpg" >
+
+                    <template v-slot:placeholder>
+                      <v-layout
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                      >
+                        <v-progress-circular indeterminate color="#0A4082">
+                        </v-progress-circular>
+                      </v-layout>
+                    </template>
+                    <!-- Adding loaders -->
                   </v-img>
                 </v-col>
 

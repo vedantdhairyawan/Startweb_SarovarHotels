@@ -7,6 +7,7 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
+      eager
     ></v-carousel-item>
   </v-carousel>
   <!-- transition between carousel images fade while surfing back and forth-->

@@ -7,6 +7,19 @@
           <v-img
           height="550px" 
           src="Taj Mahal Dome - 1.jpg" >
+
+           <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="#0A4082">
+                </v-progress-circular>
+              </v-layout>
+            </template>
+            <!-- Adding loaders -->
           </v-img>
         </v-col>
           <!-- image height of Taj Mahal to be 3x height of the adjacent images -->
@@ -21,7 +34,20 @@
           <v-img 
             height="180px"
             src="Agra Fort.jpg"
-          > </v-img>
+          > 
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="#0A4082">
+                </v-progress-circular>
+              </v-layout>
+            </template>
+            <!-- Adding loaders -->
+          </v-img>
         </v-row>
             
         <v-row 
@@ -31,13 +57,40 @@
           <v-img
             height="180px"
             src="Taj Mahal Dome.jpg"
-          > </v-img>
+          > 
+          
+           <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="#0A4082">
+                </v-progress-circular>
+              </v-layout>
+            </template>
+            <!-- Adding loaders -->
+          </v-img>
         </v-row>
 
           <v-img
             height="180px"
             src="A.jpg"
-          > </v-img>
+          > 
+           <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="#0A4082">
+                </v-progress-circular>
+              </v-layout>
+            </template>
+            <!-- Adding loaders -->
+          </v-img>
           <!-- v-img to insert images -->
         </v-col>
       </v-row>
