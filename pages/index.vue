@@ -14,6 +14,7 @@
       class=" blue darken-4 mb-12 mt-6 pa-md-2 pa-sm-2 py-16 rounded-pill"
       outlined
       tiled
+      
       >
       
         <v-card-title>
@@ -34,34 +35,47 @@
                   :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
                   label="Destinations"
                   prepend-icon="mdi-city"
-                  background-colour="blue"
+                  colour="blue"
+                  menu-props="light"
+                  
 
                 ></v-autocomplete>
               </v-col>
+              <!--datepicker-->
               <v-col cols="10" md="2"sm="4"
               class="ml-md-2 ml-sm-2 ml-6
-                     mt-md-n6 mt-sm-n6 mt-n6">
+                     mt-md-n6 mt-sm-n6 mt-n6"
+                     
+             >
+            
+
                 <v-menu
-                  v-model="menu2"
-                  :close-on-content-click="false"
-                  transition="scale-transition"
-                  offset-y
-                  max-width="290px"
-                  min-width="290px"
-                >
-                  <template v-slot:activator="{ on, attrs }">
-                    <!--Date Picker-->
-                    <v-text-field
-                      v-model="computedDateFormatted"
-                      label="Date"
-                      prepend-icon="mdi-calendar"
-                      readonly
-                      v-bind="attrs"
-                      v-on="on"
-                    ></v-text-field>
-                  </template>
-                  <v-date-picker v-model="date" no-title @input="menu2 = false"></v-date-picker>
-                </v-menu>
+        v-model="menu2"
+        :close-on-content-click="true"
+        :nudge-right="40"
+        transition="scale-transition"
+        offset-y
+        min-width="290px"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-text-field
+            v-model="date"
+            label="Date"
+            prepend-icon="mdi-calendar"
+            readonly
+            v-bind="attrs"
+            v-on="on"
+            
+          ></v-text-field>
+        </template>
+        <v-date-picker
+          v-model="date"
+          @input="menu2 = true"
+          header-color="white"
+          light
+          
+        ></v-date-picker>
+      </v-menu>
                 
               </v-col>
               <!--dropdown for services-->
@@ -69,11 +83,13 @@
               class="ml-md-2  ml-sm-16 ml-6
                      mt-md-n6 mt-sm-n6 mt-n6">
               <!--defines columns used and their position-->
-                <v-autocomplete
-                  :items="['Events', 'Pilgrims', 'Holidays', 'Business', 'Others']"
+                <v-autocomplete id= services
+              
+                  :items="['Events', 'Holidays',]"
                   label="Services"
-                  multiple
+                  
                   prepend-icon="mdi-call-split"
+                  menu-props="light"
                   
                 ></v-autocomplete>
               </v-col>
@@ -87,6 +103,7 @@
                   
                   label="Occupancy"
                   prepend-icon="mdi-account"
+                  menu-props="light"
                   
                   
                 ></v-autocomplete>
@@ -99,6 +116,8 @@
               fab
               large
               dark
+              menu-props="light"
+              href="holidays"
             >
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
@@ -119,44 +138,17 @@
   <offer/>
   <!--images-->
   <low/>
-  <Footer/>
+  
 </template>
 
 <script>
   export default {
-    data: vm => ({
+         data: () => ({
       date: new Date().toISOString().substr(0, 10),
-      dateFormatted: vm.formatDate(new Date().toISOString().substr(0, 10)),
-      menu1: false,
+      menu: false,
+      modal: false,
       menu2: false,
     }),
-
-    computed: {
-      computedDateFormatted () {
-        return this.formatDate(this.date)
-      },
-    },
-
-    watch: {
-      date (val) {
-        this.dateFormatted = this.formatDate(this.date)
-      },
-    },
-
-    methods: {
-      formatDate (date) {
-        if (!date) return null
-
-        const [year, month, day] = date.split('-')
-        return `${month}/${day}/${year}`
-      },
-      parseDate (date) {
-        if (!date) return null
-
-        const [month, day, year] = date.split('/')
-        return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
-      },
-    },
   }
 </script>
     </v-content>

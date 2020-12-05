@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "node-gyp": "^7.1.0",
+<<<<<<< HEAD
 
     "nuxt": "^2.14.7",
 
+=======
+    "nuxt": "^2.14.7",
+>>>>>>> faa96c04357e81b9ee0780dc40056913c9aca2ac
     "vue-scrollto": "^2.19.1",
     "vuelidate": "^0.7.6"
   },
