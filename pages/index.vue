@@ -161,12 +161,6 @@
     mounted() {
       this.selectedService = {id: null, name: null, link: ""}
     },
-    methods: { 
-      isEvents() {
-        console.log("retu", this.selectedService.id == 1)
-        return this.selectedService.id == 1
-      }
-    },
   }
 </script>
 
