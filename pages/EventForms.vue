@@ -17,7 +17,7 @@
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="white" class="mb-12" height="450px">
+          <v-card color="white" class="mb-12" flat>
 
             <!-- Contents of "Types of Event"  -->
 
@@ -37,7 +37,7 @@
           </v-stepper-step>
 
         <v-stepper-content step="2">
-          <v-card outlined class="mb-12" height="675px">
+          <v-card outlined class="mb-12">
 
             <!-- Contents of "Specifications"  -->
 
@@ -58,7 +58,7 @@
           <!-- the feature "outlined" worked for step 4 of the stepper form -->
 
         <v-stepper-content step="3">
-          <v-card outlined class="mb-12" height="630px">
+          <v-card outlined class="mb-12" light>
 
             <!-- Contents of "Hall Suggestions"  -->
 
@@ -67,7 +67,6 @@
             <!-- add margin spacing -->
 
             <HorizontalCard/>
-            </br>
             <HorizontalCard/>
 
 
@@ -83,7 +82,7 @@
           </v-stepper-step>
           <!-- In the same manner "Outlined" was used again in exactly the same way, but it did not work -->
         <v-stepper-content step="4">
-          <v-card outlined color="#F5F5F5" class="mb-12" height="750px">
+          <v-card  light class="mb-12" height="750px">
 
               <Dropdowns2/>
               <Textbox/>
@@ -100,7 +99,7 @@
           </v-stepper-step>
         <v-stepper-content step="5">
           <!-- again "outlined" did not work here -->
-          <v-card outlined color="#F5F5F5" class="mb-12" height="550px">
+          <v-card  light class="mb-12" flat>
 
             <!-- Contents of "Confirmation"  -->
 

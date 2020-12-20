@@ -8,6 +8,7 @@
             <v-row>
               <v-col cols="12" md="3">
                 <v-menu
+                  light
                   v-model="menu2"
                   :close-on-content-click="false"
                   transition="scale-transition"
@@ -32,6 +33,7 @@
 
               <v-col cols="12" md="3">
                 <v-autocomplete
+                  class=auto_white
                   :items="['Events', 'Pilgrims', 'Holidays', 'Business', 'Others']"
                   label="Services"
                   multiple
@@ -54,8 +56,6 @@
           
         </v-card-text>
       </v-card>
-    </v-dialog>
-  </v-row>
 </template>
 
 <script>
@@ -95,3 +95,8 @@
     },
   }
 </script>
+
+<style> 
+.auto_white {
+  background-color: white;
+}

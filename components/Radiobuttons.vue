@@ -1,11 +1,5 @@
 <template>
   <v-container class="white ma-1 pa-lg-2 pa-md-4 pa-sm-2"
-  max-height="220px"
-  lg="10"
-  md="8"
-  sm="4"
-  xs="2"
-
 
   >
    <v-row justify="center"
@@ -14,23 +8,20 @@
       <!-- Birthdays radio button -->
       <v-col
       cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+      md="6"
+      sm="6"
       >
-
         <v-card
           light
-          color="#E3F2FD"
-          max-width="200px"
+          min-height="200"
         >
+        <v-card-actions class="justify-center">
 
           <v-radio-group>
             <v-radio label="Birthdays" value="radio-1"></v-radio>
 
-          </v-radio-group>
-
+         </v-radio-group>
+        </v-card-actions>
 
         </v-card>
 
@@ -39,48 +30,68 @@
       <!-- Workshops radio button -->
       <v-col
       cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+      md="6"
+      sm="6"
       >
 
         <v-card
           light
-          color="#E3F2FD"
-          max-width="200px"
+          min-height="200"
         >
-
+        <v-card-actions class="justify-center">
           <v-radio-group>
             <v-radio label="Workshops" value="radio-2" ></v-radio>
 
           </v-radio-group>
 
-
+        </v-card-actions>
         </v-card>
 
       </v-col>
+    </v-row>
 
+    <v-row justify="center"
+      no-gutters
+      >
       <!-- Parties radio button -->
       <v-col
       cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+      md="6"
+      sm="6"
       >
 
         <v-card
           light
-          color="#E3F2FD"
-          max-width="200px"
+          min-height="200"
         >
-
+        <v-card-actions class="justify-center">
           <v-radio-group>
             <v-radio label="Parties" value="radio-3" ></v-radio>
 
           </v-radio-group>
+        </v-card-actions>
 
+        </v-card>
+
+      </v-col>
+    
+      <!-- weddings radio button -->
+      <v-col
+      cols="12"
+      md="6"
+      sm="6"
+      >
+
+        <v-card
+          light
+          min-height="200"
+        >
+        <v-card-actions class="justify-center">
+          <v-radio-group>
+            <v-radio label="Weddings" value="radio-4" ></v-radio>
+
+          </v-radio-group>
+        </v-card-actions>
 
         </v-card>
 
@@ -90,51 +101,24 @@
     <v-row justify="center"
       no-gutters
       >
-      <!-- weddings radio button -->
-      <v-col
-      cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
-      >
-
-        <v-card
-          light
-          color="#E3F2FD"
-          max-width="200px"
-        >
-
-          <v-radio-group>
-            <v-radio label="Weddings" value="radio-4" ></v-radio>
-
-          </v-radio-group>
-
-
-        </v-card>
-
-      </v-col>
-
       <!-- launch events radio button -->
       <v-col
       cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+      md="6"
+      sm="6"
       >
 
         <v-card
           light
-          color="#E3F2FD"
-          max-width="200px"
+          min-height="200"
         >
 
+        <v-card-actions class="justify-center">
           <v-radio-group>
             <v-radio label="Launch Events" value="radio-5" ></v-radio>
 
           </v-radio-group>
-
+        </v-card-actions>
 
         </v-card>
 
@@ -143,22 +127,20 @@
       <!-- ceremonies radio button -->
       <v-col
       cols="12"
-      md="3"
-      sm="2"
-      xs="1"
-      class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+      md="6"
+      sm="6"
       >
 
         <v-card
           light
-          color="#E3F2FD"
-          max-width="200px"
+          min-height="200"
         >
-
+        <v-card-actions class="justify-center">
           <v-radio-group>
             <v-radio label="Ceremonies" value="radio-6" ></v-radio>
 
           </v-radio-group>
+        </v-card-actions>
 
 
         </v-card>

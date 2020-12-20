@@ -109,7 +109,7 @@
 
             <v-col class="px-0">
               <div class="my-2">
-                <v-btn elevated small color="indigo">Choose</v-btn>
+                <v-btn dark elevated small color="indigo">Choose</v-btn>
               </div>
             </v-col>
           </v-row>
