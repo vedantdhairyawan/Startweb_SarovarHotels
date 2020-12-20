@@ -1,11 +1,10 @@
 <template>
   <div>
   
-    <v-content>
+  <v-content>
     <carousel/>
     <!--Adds carousal images-->
    
-  <template>
   <v-container>
       <v-col cols="12" md="12"
       >
@@ -42,7 +41,7 @@
                 ></v-autocomplete>
               </v-col>
               <!--datepicker-->
-              <v-col cols="10" md="2"sm="4"
+              <v-col cols="10" md="2" sm="4"
               class="ml-md-2 ml-sm-2 ml-6
                      mt-md-n6 mt-sm-n6 mt-n6"
                      
@@ -79,14 +78,17 @@
                 
               </v-col>
               <!--dropdown for services-->
-              <v-col cols="10" md="2"sm="4"
+              <v-col cols="10" md="2" sm="4"
               class="ml-md-2  ml-sm-16 ml-6
                      mt-md-n6 mt-sm-n6 mt-n6">
               <!--defines columns used and their position-->
-                <v-autocomplete id= services
-              
-                  :items="['Events', 'Holidays',]"
+                <v-autocomplete
+                  :items="services"
                   label="Services"
+                  item-text="name"
+                  item-value="id"
+                  return-object
+                  v-model="selectedService"
                   
                   prepend-icon="mdi-call-split"
                   menu-props="light"
@@ -95,7 +97,7 @@
               </v-col>
               <!--Autocomplete and dropdown for searching location-->
               
-              <v-col cols="7" md="2"sm="4"
+              <v-col cols="7" md="2" sm="4"
               class="ml-md-3 ml-sm-2 ml-6
                      mt-md-n6 mt-sm-n6 mt-n6">
                 <v-autocomplete
@@ -108,19 +110,22 @@
                   
                 ></v-autocomplete>
               </v-col>
-              <v-col cols="3" md="2"sm="2" >
+              <v-col cols="3" md="2" sm="2" >
               <div class="ml-md-4 ml-sm-4 
                           mt-md-n6 mt-sm-n14 mt-n6" >
-            <v-btn
-              color="blue darken-4"
-              fab
-              large
-              dark
-              menu-props="light"
-              href="holidays"
-            >
-              <v-icon>mdi-magnify</v-icon>
-            </v-btn>
+            
+            <template>
+              <v-btn
+                color="blue darken-4"
+                fab
+                large
+                dark
+                menu-props="light"
+                :href="`${selectedService.link}`"
+              >
+                <v-icon>mdi-magnify</v-icon>
+              </v-btn>
+            </template>
           </div>
               <!--v-btn icon>
         <v-icon large color="white">mdi-action-search</v-icon>
@@ -133,26 +138,36 @@
       </v-card>
       </v-col>
       </v-container>
-    </v-dialog>
-  </v-row>
   <offer/>
   <!--images-->
   <low/>
-  
+  </v-content>
+  </div>
 </template>
 
 <script>
   export default {
-         data: () => ({
-      date: new Date().toISOString().substr(0, 10),
-      menu: false,
-      modal: false,
-      menu2: false,
-    }),
+    data () {
+      return {
+        date: new Date().toISOString().substr(0, 10),
+        menu: false,
+        modal: false,
+        menu2: false,
+        services: [{id: 1, name: "Events", link:"EventForms"}, {id: 2, name: "Holidays", link:"holidays"}
+          ],
+        selectedService: {id: null, name: null, link: ""}
+      }
+    },
+    mounted() {
+      this.selectedService = {id: null, name: null, link: ""}
+    },
+    methods: { 
+      isEvents() {
+        console.log("retu", this.selectedService.id == 1)
+        return this.selectedService.id == 1
+      }
+    },
   }
 </script>
-    </v-content>
-  </div>
-</template>
 
 
